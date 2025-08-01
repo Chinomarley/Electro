@@ -4,17 +4,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Simulador CFE - Modo Examen</title>
+  <title>Simulador CFE - Componentes</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Simulador CFE: Modo Examen</h1>
-  <div id="quiz-container">
-    <p id="question"></p>
-    <div id="options"></div>
-    <button id="nextBtn">Siguiente</button>
+  <h1>Simulador Interactivo CFE</h1>
+  <div id="grid">
+    <div class="componente" data-nombre="Transformador" data-info="Reduce o incrementa el voltaje para distribuir energía.">🔌</div>
+    <div class="componente" data-nombre="Apartarrayos" data-info="Protege los equipos de sobretensiones causadas por rayos.">⚡</div>
+    <div class="componente" data-nombre="Restaurador" data-info="Dispositivo automático que reconecta una línea después de una falla temporal.">🔁</div>
+    <div class="componente" data-nombre="Cuchilla" data-info="Permite seccionar o aislar una parte del circuito manualmente.">🔪</div>
+    <div class="componente" data-nombre="Seccionador" data-info="Aísla circuitos eléctricos para mantenimiento. No interrumpe corriente.">🚧</div>
+    <div class="componente" data-nombre="Ramal" data-info="Derivación secundaria desde una línea principal.">🌿</div>
+    <div class="componente" data-nombre="Pértiga" data-info="Herramienta aislada usada para operar equipos a distancia.">🦯</div>
+    <div class="componente" data-nombre="Logbuster" data-info="Equipo portátil para cortar cables con seguridad.">🪚</div>
+    <div class="componente" data-nombre="Canastilla" data-info="Cesta elevada desde una grúa para trabajos en altura.">🪜</div>
   </div>
-  <div id="result" style="display:none;"></div>
+
+  <div id="info-box" class="oculto">
+    <h2 id="titulo-componente"></h2>
+    <p id="descripcion-componente"></p>
+    <button onclick="cerrarInfo()">Cerrar</button>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
