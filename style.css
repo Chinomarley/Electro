@@ -43,3 +43,15 @@ body {
 .oculto {
   display: none;
 }
+#quiz {
+  margin-top: 40px;
+}
+#opciones button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+}
+#resultado {
+  font-weight: bold;
+  margin-top: 10px;
+}
